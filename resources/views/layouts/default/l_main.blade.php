@@ -111,12 +111,318 @@
             </form>
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MAIN NAVIGATION</li>
-                <li>
-                    <a href="{!!route('dashboard.index')!!}">
-                        <i class="fa fa-dashboard"></i> 
-                        <span>DASHBOARD</span>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i> <span>DASHBOARD</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
+                        <ul class="treeview-menu">
+                            <li class="header">RINGKASAN UMUM</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-map"></i> PERENCANAAN
+                                </a>
+                            </li>
+                            <li class="header">PERENCANAAN</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-desktop"></i> REKAP PAGU INDIKATIF OPD
+                                </a>
+                            </li>
+                        </ul>
                 </li>
+                <!-- END DASHBOARD -->
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-puzzle-piece"></i> 
+                        <span>MASTERS</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li class="header">DATA</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-institution"></i> KELOMPOK URUSAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-institution"></i> URUSAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-institution"></i> ORGANISASI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-institution"></i> UNIT KERJA
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-institution"></i> PROGRAM
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-institution"></i> KEGIATAN
+                                </a>
+                            </li>
+                            <li class="header">MAPPING</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-archive"></i> PROGRAM - OPD/SKPD
+                                </a>
+                            </li>
+                            <li class="header">ANEKA DATA</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-hdd-o"></i> PAGU ANGGARAN OPD/ <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SKPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-hdd-o"></i> PAGU ANGGARAN <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ANGGOTA DEWAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-hdd-o"></i> TAHUN PERENCANAAN/ <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ANGGARAN
+                                </a>
+                            </li>
+                         </ul>
+                </li>
+                <!-- END MASTERS -->
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-plane"></i> 
+                        <span>PERENCANAAN</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li class="header">RPJMD</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> VISI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> MISI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> TUJUAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> SASARAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> STRATEGI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> PRIORITAS/ARAH <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp KEBIJAKAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> INDIKASI RENCANA <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PROGRAM
+                                </a>
+                            </li>
+                            <li class="header">RENSTRA OPD/SKPD</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> TUJUAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> SASARAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> STRATEGI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> ARAH KEBIJAKAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> INDIKATOR SASARAN
+                                </a>
+                            </li>
+                            <li class="header">POKIR/RESES</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> PEMILIK POKOK <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PIKIRAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-plane"></i> POKOK PIKIRAN
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-bar-chart"></i> 
+                        <span>WORKFLOW</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> ASPIRASI MUSRENBANG <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DESA/KELURAHAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MUSRENBANG <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DESA/KELURAHAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> ASPIRASI MUSRENBANG <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp KECAMATAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MUSRENBANG <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp KECAMATAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> USULAN PRA RENJA <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp OPD/SKPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN PRA RENJA <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp OPD/SKPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> USULAN RAKOR BIDANG
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN RAKOR <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp BIDANG
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> USULAN FORUM <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp OPD/SKPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN FORUM <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp OPD/SKPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> USULAN MUSRENBANG <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp KAB.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MUSRENBANG KAB.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> VERIFIKASI TAPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> RKPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> RKPD PERUBAHAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-download"></i> PEMBAHASAN RKPD <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PERUBAHAN
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-folder-o"></i> 
+                        <span>LAPORAN</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                        <ul class="treeview-menu">
+                            <li class="header">RENJA OPD/SKPD (MURNI)</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-folder-o"></i> RKPD PER OPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-folder-o"></i> RKPD PER OPD RINCI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-folder-o"></i> PROGRAM RKPD PER OPD
+                                </a>
+                            </li>
+                            <li class="header">RENJA OPD/SKPD (PERUBAHAN)</li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-folder-o"></i> RKPD PERUBAHAN <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PER OPD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{!!route('permissions.index')!!}">
+                                    <i class="fa fa-folder-o"></i> PROGRAM RKPD <br/> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PER OPD RINCI
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <!--<li>
+                    <a href="#">
+                        <i class="fa fa-gear"></i> 
+                        <span>SETTING</span>
+                        <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                </li> -->
                 <li class="header">SETTING</li>
                 @hasrole('superadmin') 
                 <li class="treeview">
@@ -145,7 +451,34 @@
                             </a>
                         </li>
                     </ul>
-                </li>       
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-database"></i> <span>PENYIMPANAN</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        @role('superadmin')
+                        <li>
+                            <a href="{!!route('permissions.index')!!}">
+                                <i class="fa fa-clone"></i> COPY DATA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{!!route('roles.index')!!}">
+                                <i class="fa fa-refresh"></i> CLEAR CACHE
+                            </a>
+                        </li>
+                        @endrole
+                        <li>
+                            <a href="{!!route('users.index')!!}">
+                                <i class="fa fa-clipboard"></i> LOG
+                            </a>
+                        </li>
+                    </ul>
+                </li>         
                 @endhasrole	         
             </ul>       
         </section>
